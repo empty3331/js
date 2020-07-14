@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>함수</h1>
+</body>
+
+<script type="text/javascript">
+
+console.log("===기명함수===");
+testA();
+//기명함수,선언적함수,이름있는 함수
+function testA(){
+	console.log("기명함수 실행"); }
+
+
+
+</script>
+
+<script type="text/javascript">
+
+	var testB = function() {  
+		console.log("익명함수 실행");
+	}; 
+
+	testB();  //함수실행
+</script>
+
+<script type="text/javascript">
+
+        //(2)위에서 부터 순서대로 해석
+        var test = function(){
+            console.log("testA함수 입니다.");
+        }
+
+        //(1)선언적 함수가 가장 먼저 해석됨
+        function test(){
+            console.log("testB함수 입니다.");
+        } 
+
+        //(3)번
+        test();
+
+
+</script>
+
+
+</html>
